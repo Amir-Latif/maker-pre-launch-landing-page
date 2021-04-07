@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&display=swap');
+
+body {
+    background-color: #080c20 !important;
+    text-align: center !important;
+    color: white !important;
+    font-family: Manrope,sans-serif;
+
+    h1 {
+        font-size: 37px;
+        width: 75%;
+        margin: 10% auto;
+    }
+
+    a {
+        color: #3ee9e5;
+    }
+    
+    p {
+        color:#777f98;
+        line-height: 1.5;
+    }
+}
+
+header {
+    padding: 10%;
+
+    img {
+        margin: auto;
+        display: block;
+    }
+}
+
+#front-image {
+    width: 100%;
+    margin-top: 10%;
+}
+
+section#front {
+    margin: 0 5%;
+
+    img {
+        animation: scroll 1.5s infinite ease-in-out;
+        margin-top: 5%;
+    }
+
+    @keyframes scroll {
+        0% {transform: translateY(0);}
+        50% {transform: translateY(5px);}
+        100% {transform: translateY(0);}
+    }
+}
+
+section#motivations {
+    margin-top: 40%;
+    padding: 5%;
+
+    div {
+        margin: 15% 5%;
+
+        img {
+            width: 6em;
+            background-color: #093f68;
+            border-radius: 2rem;
+            padding: 6.5%;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+#pricing {
+    margin-top: 15%;
+
+    div {
+        border-radius: 0.5rem;
+        margin: 20% 5%;
+        padding: 7%;
+        text-align: left;
+        position: relative;
+    }
+
+    img {
+        position: absolute;
+        top: -7%;
+    }
+
+    h4 {
+        margin: 15px 0;
+    }
+
+    h1 {
+        margin-left: 0;
+    }
+
+    p {
+        color: gray;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    li {
+        font-weight: 200;
+        width: max-content;
+        margin: 5% 0;
+    }
+
+    #free {
+        background-color: #093f68;
+
+        ul {
+            list-style-image: url('images/check-free.svg');
+        }
+    }
+
+    #premium {
+        color: #080c20;
+        background-color: #3ee9e5;
+
+        h4 {
+            margin-top: 10%;
+        }
+
+        h1 {
+            display: flex;
+            align-items: center;
+
+            span {
+                color: gray;
+                font-size: 16px;
+                margin-left: 5px;
+            }
+        }
+
+        ul {
+            list-style-image: url('images/check-premium.svg');
+            color: #080c20;
+        }
+    }
+}
+
+form {
+    margin-top: 10%;
+    font-family: sans-serif;
+
+    h3 {
+        width: 70%;
+        margin: 1em auto;
+    }
+
+    input {
+        background-color: #093f68 !important;
+        color: #0b5186 !important;
+        border: none !important;
+    }
+
+    button {
+        background-color: #3ee9e5 !important;
+        color: #080c20;
+    }
+
+    .button {
+        border-radius: 2rem;
+        width: 75%;
+        padding: 10px 20px;
+        margin: 2.5% auto;
+    }
+}
+
+
+footer {
+    border-top: solid;
+    padding: 5%;
+    margin-top: 50%;
+
+    span {
+        font-style: italic;
+        font-family: 'Dancing Script', cursive;;
+    }
+}

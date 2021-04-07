@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&display=swap");
+body {
+  background-color: #080c20 !important;
+  text-align: center !important;
+  color: white !important;
+  font-family: Manrope, sans-serif;
+}
+body h1 {
+  font-size: 37px;
+  width: 75%;
+  margin: 10% auto;
+}
+body a {
+  color: #3ee9e5;
+}
+body p {
+  color: #777f98;
+  line-height: 1.5;
+}
+
+header {
+  padding: 10%;
+}
+header img {
+  margin: auto;
+  display: block;
+}
+
+#front-image {
+  width: 100%;
+  margin-top: 10%;
+}
+
+section#front {
+  margin: 0 5%;
+}
+section#front img {
+  animation: scroll 1.5s infinite ease-in-out;
+  margin-top: 5%;
+}
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+section#motivations {
+  margin-top: 40%;
+  padding: 5%;
+}
+section#motivations div {
+  margin: 15% 5%;
+}
+section#motivations div img {
+  width: 6em;
+  background-color: #093f68;
+  border-radius: 2rem;
+  padding: 6.5%;
+  margin-bottom: 15px;
+}
+
+#pricing {
+  margin-top: 15%;
+}
+#pricing div {
+  border-radius: 0.5rem;
+  margin: 20% 5%;
+  padding: 7%;
+  text-align: left;
+  position: relative;
+}
+#pricing img {
+  position: absolute;
+  top: -7%;
+}
+#pricing h4 {
+  margin: 15px 0;
+}
+#pricing h1 {
+  margin-left: 0;
+}
+#pricing p {
+  color: gray;
+}
+#pricing ul {
+  padding-left: 20px;
+}
+#pricing li {
+  font-weight: 200;
+  width: max-content;
+  margin: 5% 0;
+}
+#pricing #free {
+  background-color: #093f68;
+}
+#pricing #free ul {
+  list-style-image: url("images/check-free.svg");
+}
+#pricing #premium {
+  color: #080c20;
+  background-color: #3ee9e5;
+}
+#pricing #premium h4 {
+  margin-top: 10%;
+}
+#pricing #premium h1 {
+  display: flex;
+  align-items: center;
+}
+#pricing #premium h1 span {
+  color: gray;
+  font-size: 16px;
+  margin-left: 5px;
+}
+#pricing #premium ul {
+  list-style-image: url("images/check-premium.svg");
+  color: #080c20;
+}
+
+form {
+  margin-top: 10%;
+  font-family: sans-serif;
+}
+form h3 {
+  width: 70%;
+  margin: 1em auto;
+}
+form input {
+  background-color: #093f68 !important;
+  color: #0b5186 !important;
+  border: none !important;
+}
+form button {
+  background-color: #3ee9e5 !important;
+  color: #080c20;
+}
+form .button {
+  border-radius: 2rem;
+  width: 75%;
+  padding: 10px 20px;
+  margin: 2.5% auto;
+}
+
+footer {
+  border-top: solid;
+  padding: 5%;
+  margin-top: 50%;
+}
+footer span {
+  font-style: italic;
+  font-family: "Dancing Script", cursive;
+}
+
+/*# sourceMappingURL=styles.css.map */
