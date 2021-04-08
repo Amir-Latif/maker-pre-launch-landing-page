@@ -36,7 +36,7 @@ header {
 }
 
 section#front {
-    margin: 0 5%;
+    margin: 4em 5% 0;
 
     #scroll-icon {
         animation: scroll 1.5s infinite ease-in-out;
@@ -51,7 +51,7 @@ section#front {
     
     #front-image {
         width: 100%;
-        margin-top: 10%;
+        margin: 10% auto;
     }
 
     .desktop-image {
@@ -82,11 +82,11 @@ section#motivations {
 }
 
 #pricing {
-    margin-top: 15%;
+    margin: 15% auto 0;
 
     div {
         border-radius: 0.5rem;
-        margin: 20% 5%;
+        margin: 20% 1%;
         padding: 7%;
         text-align: left;
         position: relative;
