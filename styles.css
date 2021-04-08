@@ -13,6 +13,9 @@ body h1 {
 body a {
   color: #3ee9e5;
 }
+body a:hover {
+  color: #3ee9e5;
+}
 body p {
   color: #777f98;
   line-height: 1.5;
@@ -26,15 +29,10 @@ header img {
   display: block;
 }
 
-#front-image {
-  width: 100%;
-  margin-top: 10%;
-}
-
 section#front {
   margin: 0 5%;
 }
-section#front img {
+section#front #scroll-icon {
   animation: scroll 1.5s infinite ease-in-out;
   margin-top: 5%;
 }
@@ -49,20 +47,31 @@ section#front img {
     transform: translateY(0);
   }
 }
+section#front #front-image {
+  width: 100%;
+  margin-top: 10%;
+}
+section#front .desktop-image {
+  display: none;
+}
 
 section#motivations {
   margin-top: 40%;
   padding: 5%;
 }
-section#motivations div {
+section#motivations .motivation {
   margin: 15% 5%;
 }
-section#motivations div img {
+section#motivations .motivation img {
   width: 6em;
+  min-height: 100px;
   background-color: #093f68;
   border-radius: 2rem;
   padding: 6.5%;
   margin-bottom: 15px;
+}
+section#motivations .motivation:nth-of-type(even) {
+  margin-top: 20%;
 }
 
 #pricing {
@@ -126,6 +135,9 @@ section#motivations div img {
 form {
   margin-top: 10%;
   font-family: sans-serif;
+  background-image: url(images/bg-footer-squiggle.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 form h3 {
   width: 70%;
@@ -136,9 +148,12 @@ form input {
   color: #0b5186 !important;
   border: none !important;
 }
+form input:focus {
+  color: white !important;
+}
 form button {
   background-color: #3ee9e5 !important;
-  color: #080c20;
+  color: #808392;
 }
 form .button {
   border-radius: 2rem;
@@ -155,6 +170,87 @@ footer {
 footer span {
   font-style: italic;
   font-family: "Dancing Script", cursive;
+}
+
+@media screen and (min-width: 768px) {
+  .flex-desktop {
+    display: flex;
+  }
+
+  header img {
+    margin-left: 0;
+  }
+
+  section#front {
+    margin: 0;
+  }
+  section#front #front-image {
+    display: none;
+  }
+  section#front .desktop-image {
+    display: block;
+    width: 20em;
+  }
+  section#front .flex-desktop div {
+    margin: auto 5em;
+    background-image: url(images/bg-hero-squiggle.svg);
+    background-size: contain;
+  }
+
+  section#motivations {
+    text-align: left;
+    margin-top: 0.5em;
+  }
+  section#motivations .motivation {
+    margin: 15% 3%;
+  }
+  section#motivations .motivation img {
+    width: 9em;
+    padding: 10%;
+    min-height: 150px;
+  }
+  section#motivations .motivation h3, section#motivations .motivation p {
+    font-size: 1em;
+  }
+  section#motivations .motivation h3 {
+    margin: 2em 0;
+  }
+
+  section#pricing {
+    margin-top: 0;
+  }
+  section#pricing > P {
+    width: 35em;
+    margin: 2em auto;
+  }
+  section#pricing .flex-desktop {
+    padding: 0;
+    margin: auto 0;
+    justify-content: center;
+  }
+  section#pricing .flex-desktop div {
+    padding: 2%;
+    width: 30%;
+    white-space: normal;
+    margin: 5% 1em;
+  }
+
+  form {
+    width: 25em;
+    margin: auto;
+  }
+  form .flex-desktop input {
+    width: 130%;
+    margin-right: 1em;
+  }
+  form h3 {
+    width: auto;
+  }
+
+  footer {
+    margin-top: 10em;
+    padding: 1%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
