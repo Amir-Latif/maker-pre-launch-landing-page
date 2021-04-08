@@ -161,6 +161,9 @@ form .button {
   padding: 10px 20px;
   margin: 2.5% auto;
 }
+form #error-message {
+  color: white;
+}
 
 footer {
   border-top: solid;
