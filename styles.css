@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&display=swap");
 body {
+  position: absolute;
+  overflow-x: hidden;
   background-color: #080c20 !important;
   text-align: center !important;
   color: white !important;
